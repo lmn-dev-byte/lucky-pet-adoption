@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adopters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>All Adopters</h1>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>City</th>
+</tr>
+
+{% for adopter in adopters %}
+<tr>
+    <td>{{ adopter[0] }}</td>
+    <td>{{ adopter[1] }}</td>
+    <td>{{ adopter[2] }}</td>
+    <td>{{ adopter[3] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adopt Pet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Adopt Pet</h1>
+
+<form method="POST">
+
+    <input type="number" name="pet_id" placeholder="Pet ID"><br><br>
+
+    <input type="number" name="adopter_id" placeholder="Adopter ID"><br><br>
+
+    <button type="submit">Adopt</button>
+
+</form>
+
+</body>
+</html>
